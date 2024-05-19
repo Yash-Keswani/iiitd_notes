@@ -55,8 +55,8 @@ extra_javascript:
 plugins:
   - search
   - roamlinks
-  #- plantuml:
-  #    puml_url: https://www.plantuml.com/plantuml/
-  #    puml_keyword: plantuml
+  - plantuml:
+      puml_url: https://www.plantuml.com/plantuml/
+      puml_keyword: plantuml
   - awesome-pages:
       sort_type: natural
