@@ -1,0 +1,1 @@
+notes for CSE 202 DBMS
