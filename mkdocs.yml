@@ -1,5 +1,5 @@
 site_name: yashk's iiitd notes
-site_url: https://yash-keswani.github.io/iiitd_notes/
+
 theme:
   name: material
   features:
