@@ -5951,16 +5951,7 @@ To have access to a gun, one must first be adept with the bow-and-arrow. To have
 <li>Weapon &lt;- prerequisite of -&gt; Weapon</li>
 </ul>
 <h4 id="representation-of-a-self-relationship">Representation of a Self-Relationship<a class="headerlink" href="#representation-of-a-self-relationship" title="Permanent link">&para;</a></h4>
-<div class="highlight"><pre><span></span><code>allowmixing
-class weapon{
-    &lt;u&gt;weapon_id&lt;/u&gt;
-    weapon_name
-    firepower
-}
-rectangle prereq
-weapon - prereq: weapon_id
-prereq - weapon: prereq_id
-</code></pre></div>
+<div class="puml"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="110px" preserveAspectRatio="true" style="background: #ffffff" version="1.1" viewBox="0 0 295 110" width="295px" zoomAndPan="magnify"><defs/><g><g id="elem_weapon"><rect codeLine="2" fill="#F1F1F1" height="96.8906" id="weapon" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="113" x="7" y="7"/><ellipse cx="33.7" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M36.6688,28.6406 Q36.0906,28.9375 35.45,29.0781 Q34.8094,29.2344 34.1063,29.2344 Q31.6063,29.2344 30.2781,27.5938 Q28.9656,25.9375 28.9656,22.8125 Q28.9656,19.6875 30.2781,18.0313 Q31.6063,16.375 34.1063,16.375 Q34.8094,16.375 35.45,16.5313 Q36.1063,16.6875 36.6688,16.9844 L36.6688,19.7031 Q36.0438,19.125 35.45,18.8594 Q34.8563,18.5781 34.2313,18.5781 Q32.8875,18.5781 32.2,19.6563 Q31.5125,20.7188 31.5125,22.8125 Q31.5125,24.9063 32.2,25.9844 Q32.8875,27.0469 34.2313,27.0469 Q34.8563,27.0469 35.45,26.7813 Q36.0438,26.5 36.6688,25.9219 L36.6688,28.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="55" x="50.3" y="27.8467">weapon</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="119" y1="39" y2="39"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" text-decoration="underline" textLength="74" x="13" y="55.9951">weapon_id</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="101" x="13" y="72.292">weapon_name</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="64" x="13" y="88.5889">firepower</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="119" y1="95.8906" y2="95.8906"/></g><g id="elem_prereq"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="66" x="223.5" y="37.3"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="46" x="233.5" y="60.2951">prereq</text></g><g id="link_weapon_prereq"><path codeLine="8" d="M120.36,55.44 C153.83,55.44 195,55.44 223.25,55.44 " fill="none" id="weapon-prereq" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="67" x="138.25" y="48.5069">weapon_id</text></g><g id="link_prereq_weapon"><path codeLine="9" d="M223.18,69.92 C216.53,72.21 209.51,74.23 202.75,75.44 C175.63,80.33 168.08,78.93 140.75,75.44 C134.02,74.59 127.03,73.33 120.13,71.84 " fill="none" id="prereq-weapon" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="60" x="141.75" y="71.5069">prereq_id</text></g></g></svg></div>
 
 
 

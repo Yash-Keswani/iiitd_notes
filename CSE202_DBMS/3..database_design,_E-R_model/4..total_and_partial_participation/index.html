@@ -5930,31 +5930,7 @@
 <p>Partial Participation is observed when some entities don't necessarily participate in any relationship in the relationship set. These can be represented with just a single line</p>
 <h3 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h3>
 <p>Each soldier serves in an army, and each army must have soldiers in it. Additionally, the soldier-army relation is many-to-one</p>
-<div class="highlight"><pre><span></span><code>allowmixing
-skinparam linetype ortho
-class soldier{
-    &lt;u&gt;soldier_ID&lt;/u&gt;
-    name
-    equipped_weapon
-}
-class army{
-    &lt;u&gt;army_ID&lt;/u&gt;
-}
-rectangle serves_in
-
-
-army &lt;-[hidden]- serves_in
-army &lt;-- serves_in
-army &lt;-- serves_in
-army &lt;-[hidden]- serves_in
-
-serves_in -[hidden]- soldier
-serves_in -[hidden]- soldier
-serves_in -- soldier
-serves_in -- soldier
-serves_in -[hidden]- soldier
-serves_in -[hidden]- soldier
-</code></pre></div>
+<div class="puml"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="331px" preserveAspectRatio="true" style="background: #ffffff" version="1.1" viewBox="0 0 154 331" width="154px" zoomAndPan="magnify"><defs/><g><g id="elem_soldier"><rect codeLine="3" fill="#F1F1F1" height="96.8906" id="soldier" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="140" x="7" y="227.59"/><ellipse cx="49.9" cy="243.59" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M52.8688,249.2306 Q52.2906,249.5275 51.65,249.6681 Q51.0094,249.8244 50.3063,249.8244 Q47.8063,249.8244 46.4781,248.1838 Q45.1656,246.5275 45.1656,243.4025 Q45.1656,240.2775 46.4781,238.6213 Q47.8063,236.965 50.3063,236.965 Q51.0094,236.965 51.65,237.1213 Q52.3063,237.2775 52.8688,237.5744 L52.8688,240.2931 Q52.2438,239.715 51.65,239.4494 Q51.0563,239.1681 50.4313,239.1681 Q49.0875,239.1681 48.4,240.2463 Q47.7125,241.3088 47.7125,243.4025 Q47.7125,245.4963 48.4,246.5744 Q49.0875,247.6369 50.4313,247.6369 Q51.0563,247.6369 51.65,247.3713 Q52.2438,247.09 52.8688,246.5119 L52.8688,249.2306 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="46" x="70.1" y="248.4367">soldier</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="146" y1="259.59" y2="259.59"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" text-decoration="underline" textLength="67" x="13" y="276.5851">soldier_ID</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="39" x="13" y="292.882">name</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="128" x="13" y="309.1789">equipped_weapon</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="146" y1="316.4806" y2="316.4806"/></g><g id="elem_army"><rect codeLine="8" fill="#F1F1F1" height="64.2969" id="army" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="66" x="44" y="7"/><ellipse cx="59.45" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M62.4188,28.6406 Q61.8406,28.9375 61.2,29.0781 Q60.5594,29.2344 59.8563,29.2344 Q57.3563,29.2344 56.0281,27.5938 Q54.7156,25.9375 54.7156,22.8125 Q54.7156,19.6875 56.0281,18.0313 Q57.3563,16.375 59.8563,16.375 Q60.5594,16.375 61.2,16.5313 Q61.8563,16.6875 62.4188,16.9844 L62.4188,19.7031 Q61.7938,19.125 61.2,18.8594 Q60.6063,18.5781 59.9813,18.5781 Q58.6375,18.5781 57.95,19.6563 Q57.2625,20.7188 57.2625,22.8125 Q57.2625,24.9063 57.95,25.9844 Q58.6375,27.0469 59.9813,27.0469 Q60.6063,27.0469 61.2,26.7813 Q61.7938,26.5 62.4188,25.9219 L62.4188,28.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="33" x="73.55" y="27.8467">army</text><line style="stroke:#181818;stroke-width:0.5;" x1="45" x2="109" y1="39" y2="39"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" text-decoration="underline" textLength="54" x="50" y="55.9951">army_ID</text><line style="stroke:#181818;stroke-width:0.5;" x1="45" x2="109" y1="63.2969" y2="63.2969"/></g><g id="elem_serves_in"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="85" x="34.5" y="131.29"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="65" x="44.5" y="154.2851">serves_in</text></g><g id="link_army_serves_in"><path codeLine="15" d="M70.4,77.64 C70.4,96.96 70.4,114.76 70.4,130.92 " fill="none" id="army-backto-serves_in-1" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="70.4,71.64,66.4,80.64,70.4,76.64,74.4,80.64,70.4,71.64" style="stroke:#181818;stroke-width:1.0;"/></g><g id="link_army_serves_in"><path codeLine="16" d="M83.6,77.64 C83.6,96.96 83.6,114.76 83.6,130.92 " fill="none" id="army-backto-serves_in-2" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="83.6,71.64,79.6,80.64,83.6,76.64,87.6,80.64,83.6,71.64" style="stroke:#181818;stroke-width:1.0;"/></g><g id="link_serves_in_soldier"><path codeLine="21" d="M70.93,167.85 C70.93,183.42 70.93,206.44 70.93,227.26 " fill="none" id="serves_in-soldier-2" style="stroke:#181818;stroke-width:1.0;"/></g><g id="link_serves_in_soldier"><path codeLine="22" d="M83.07,167.85 C83.07,183.42 83.07,206.44 83.07,227.26 " fill="none" id="serves_in-soldier-3" style="stroke:#181818;stroke-width:1.0;"/></g></g></svg></div>
 
 
 
