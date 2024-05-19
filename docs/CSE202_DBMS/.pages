@@ -1,1 +1,4 @@
 title: CSE202 DBMS
+nav:
+  - index.md
+  - ...
